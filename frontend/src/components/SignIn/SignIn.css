@@ -1,0 +1,116 @@
+/* SignIn.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url( "https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" 
+);
+.signin-form{
+    color: #FF4500;
+}
+.signin-container {
+    background-image: url('https://i.pinimg.com/564x/41/3e/97/413e9752b3fa92ed5cea081b038543c4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFD700; /* Yellow color for text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Overlay effect */
+.signin-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for better readability */
+    z-index: 1;
+}
+
+.signin-header {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive;/* Applying new font */
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(218, 209, 209, 0.7); /* Text shadow for better visibility */
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.signin-form {
+    position: relative;
+    z-index: 2;
+    background-image: url('https://i.pinimg.com/736x/94/4f/a4/944fa48d9947de0fe9d3e428ec66e99e.jpg'); /* Light background for form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.signin-form:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.signin-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #FF4500; /* Button color */
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animation effects */
+}
+
+.signin-form input:focus {
+    border-color:#FF6347; /* Yellow color on focus */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Yellow glow effect */
+    outline: none; /* Remove default outline */
+}
+
+.signin-button {
+    background-color: #FF4500; /* Button color */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+}
+
+.signin-button:hover {
+    background-color: #FF6347; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.signin-footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    font-size: 1.1rem; /* Slightly larger text */
+}
+
+.signin-footer a {
+    color: #FFD700; /* Yellow color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signin-footer a:hover {
+    color: #FF4500; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
